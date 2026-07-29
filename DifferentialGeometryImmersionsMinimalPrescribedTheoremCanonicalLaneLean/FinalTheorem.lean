@@ -1,0 +1,14 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.DifferentialGeometryImmersionsMinimalPrescribedTheoremCanonicalLaneLean.GateLemmas
+
+namespace HautevilleHouse
+namespace DifferentialGeometryImmersionsMinimalPrescribedTheoremCanonicalLaneLean
+
+def ConstrainedImmersionMinimalPrescribedClosure (A : AdmissibleClass) : Prop :=
+  immersionBridgeClosed A ∧ immersionGateClosed A
+
+theorem constrained_immersion_minimal_prescribed_endgame (A : AdmissibleClass) : ConstrainedImmersionMinimalPrescribedClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end DifferentialGeometryImmersionsMinimalPrescribedTheoremCanonicalLaneLean
+end HautevilleHouse

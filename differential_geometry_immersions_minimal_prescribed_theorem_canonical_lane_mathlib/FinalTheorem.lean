@@ -1,0 +1,9 @@
+import differential_geometry_immersions_minimal_prescribed_theorem_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace differential_geometry_immersions_minimal_prescribed_theorem_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end differential_geometry_immersions_minimal_prescribed_theorem_canonical_lane_mathlib
+end HautevilleHouse
